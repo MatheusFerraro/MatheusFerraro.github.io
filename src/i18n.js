@@ -23,6 +23,9 @@ i18n
             title: "Hi, I'm Matheus Ferraro"
           },
           description: "I am a Software Developer based in Canada.",
+          stack: {
+            title: "Tech Stack"
+          },
           projects: "Projects",
           contact: "Contact Me"
         }
@@ -36,6 +39,9 @@ i18n
             title: "Salut, je suis Matheus Ferraro"
           },
           description: "Je suis un développeur de logiciels basé au Canada.",
+          stack: {
+            title: "Stack Technique"
+          },
           projects: "Projets",
           contact: "Contactez-moi"
         }
@@ -49,6 +55,9 @@ i18n
             title: "Oi, eu sou Matheus Ferraro"
           },
           description: "Sou um desenvolvedor de software morando no Canadá.",
+          stack: {
+            title: "Tecnologias"
+          },
           projects: "Projetos",
           contact: "Entre em contato"
         }
