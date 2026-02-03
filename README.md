@@ -1,3 +1,9 @@
+﻿# My Portfolio
+
+Step-by-step build guide: [docs/PORTFOLIO_STEP_BY_STEP.md](docs/PORTFOLIO_STEP_BY_STEP.md)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
