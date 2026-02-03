@@ -1,10 +1,25 @@
-﻿# My Portfolio
+﻿# Matheus Ferraro - Portfolio
 
-Step-by-step build guide: [docs/PORTFOLIO_STEP_BY_STEP.md](docs/PORTFOLIO_STEP_BY_STEP.md)
+🌐 **Live Site:** [https://MatheusFerraro.github.io](https://MatheusFerraro.github.io)
 
----
+Modern, multilingual portfolio website showcasing my software development projects and technical skills.
 
-# Getting Started with Create React App
+## ✨ Features
+
+- 🌍 **Multilingual Support** - English, French, and Brazilian Portuguese
+- 🎨 **Dark/Light Theme** - Automatic theme detection with manual toggle
+- 📱 **Responsive Design** - Works on all devices
+- ⚡ **Fast & Optimized** - Built with React and deployed on GitHub Pages
+- 🛠️ **Tech Stack Display** - Interactive showcase of technologies and tools
+
+## 🚀 Technologies Used
+
+- React 19
+- i18next for internationalization
+- CSS Variables for theming
+- GitHub Actions for CI/CD
+
+## 🏃 Getting Started
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

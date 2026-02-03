@@ -23,24 +23,39 @@ function App() {
     ...devOpsStack
   ];
 
+  const translatedProjects = [
+    {
+      name: t('projectsList.recipeWorld.name'),
+      description: t('projectsList.recipeWorld.description'),
+      url: projects[0].url,
+      technologies: projects[0].technologies
+    },
+    {
+      name: t('projectsList.embedded.name'),
+      description: t('projectsList.embedded.description'),
+      url: projects[1].url,
+      technologies: projects[1].technologies
+    }
+  ];
+
   return (
     <div className="container">
       <nav className="navbar">
         <div className="nav-left">
           <button 
-            className={i18n.language === 'en' ? 'active' : ''}
+            className={i18n.language === 'en' || i18n.language.startsWith('en') ? 'active' : ''}
             onClick={() => changeLanguage('en')}
           >
             EN
           </button>
           <button 
-            className={i18n.language === 'fr' ? 'active' : ''}
+            className={i18n.language === 'fr' || i18n.language.startsWith('fr') ? 'active' : ''}
             onClick={() => changeLanguage('fr')}
           >
             FR
           </button>
           <button 
-            className={i18n.language === 'pt-BR' ? 'active' : ''}
+            className={i18n.language === 'pt-BR' || i18n.language === 'pt' || i18n.language.startsWith('pt') ? 'active' : ''}
             onClick={() => changeLanguage('pt-BR')}
           >
             PT-BR
@@ -76,7 +91,7 @@ function App() {
       <section id="projects">
         <h2>{t('projects')}</h2>
         <div className="projects-grid">
-          {projects.map((p, index) => (
+          {translatedProjects.map((p, index) => (
             <a key={index} className="project-card" href={p.url} target="_blank" rel="noreferrer">
               <h3>{p.name}</h3>
               <p className="project-description">{p.description}</p>
@@ -94,7 +109,7 @@ function App() {
         <p>{t('contact')}</p>
         <div className="social-links">
           <a href="https://github.com/MatheusFerraro" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/matheusferraro" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/matheus-ferraro/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </footer>
     </div>

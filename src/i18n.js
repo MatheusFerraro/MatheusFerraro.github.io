@@ -3,15 +3,15 @@ import { initReactI18next } from 'react-i18next';
 import LanguageDetector from 'i18next-browser-languagedetector';
 
 i18n
-  .use(LanguageDetector) // Detects user language
-  .use(initReactI18next) // Passes i18n down to react-i18next
+  .use(LanguageDetector)
+  .use(initReactI18next)
   .init({
     debug: false,
-    fallbackLng: 'en', // Use English if detected language is not available
+    fallbackLng: 'en',
     supportedLngs: ['en', 'pt-BR', 'fr'],
-    nonExplicitSupportedLngs: true,
+    load: 'languageOnly',
     interpolation: {
-      escapeValue: false, // React already safes from xss
+      escapeValue: false,
     },
     resources: {
       en: {
@@ -27,7 +27,17 @@ i18n
             title: "Tech Stack"
           },
           projects: "Projects",
-          contact: "Contact Me"
+          contact: "Contact Me",
+          projectsList: {
+            recipeWorld: {
+              name: "Recipe World",
+              description: "A full-stack web application designed to demonstrate enterprise-level software development practices using ASP.NET Core MVC (.NET 8). This project was built to showcase proficiency in N-Tier Architecture, Secure Authentication, Database Management, and Unit Testing. It features a complete recipe management ecosystem with role-based security, ingredient tracking, and an admin approval workflow."
+            },
+            embedded: {
+              name: "Embedded-Projects (Arduino UNO R3 + ESP32)",
+              description: "Hands-on embedded systems projects built with the Elegoo Super Starter Kit UNO R3 and a D1 MINI ESP32. This repo focuses on practical hardware + software integration: GPIO, PWM, analog sensing, timing/state machines, and (on ESP32) WiFi networking."
+            }
+          }
         }
       },
       fr: {
@@ -43,7 +53,17 @@ i18n
             title: "Stack Technique"
           },
           projects: "Projets",
-          contact: "Contactez-moi"
+          contact: "Contactez-moi",
+          projectsList: {
+            recipeWorld: {
+              name: "Recipe World",
+              description: "Une application web full-stack conçue pour démontrer les pratiques de développement logiciel de niveau entreprise utilisant ASP.NET Core MVC (.NET 8). Ce projet a été construit pour mettre en valeur la maîtrise de l'Architecture N-Tier, l'Authentification Sécurisée, la Gestion de Base de Données et les Tests Unitaires. Il propose un écosystème complet de gestion de recettes avec sécurité basée sur les rôles, suivi des ingrédients et workflow d'approbation admin."
+            },
+            embedded: {
+              name: "Projets Embarqués (Arduino UNO R3 + ESP32)",
+              description: "Projets de systèmes embarqués pratiques construits avec le Kit de Démarrage Super Elegoo UNO R3 et un D1 MINI ESP32. Ce dépôt se concentre sur l'intégration pratique matériel + logiciel : GPIO, PWM, détection analogique, machines d'état/temporisation et (sur ESP32) réseau WiFi."
+            }
+          }
         }
       },
       'pt-BR': {
@@ -59,7 +79,17 @@ i18n
             title: "Tecnologias"
           },
           projects: "Projetos",
-          contact: "Entre em contato"
+          contact: "Entre em contato",
+          projectsList: {
+            recipeWorld: {
+              name: "Recipe World",
+              description: "Uma aplicação web full-stack projetada para demonstrar práticas de desenvolvimento de software de nível empresarial usando ASP.NET Core MVC (.NET 8). Este projeto foi construído para mostrar proficiência em Arquitetura N-Tier, Autenticação Segura, Gerenciamento de Banco de Dados e Testes Unitários. Possui um ecossistema completo de gerenciamento de receitas com segurança baseada em funções, rastreamento de ingredientes e fluxo de aprovação de administrador."
+            },
+            embedded: {
+              name: "Projetos Embarcados (Arduino UNO R3 + ESP32)",
+              description: "Projetos práticos de sistemas embarcados construídos com o Kit Elegoo Super Starter UNO R3 e um D1 MINI ESP32. Este repositório foca na integração prática de hardware + software: GPIO, PWM, sensoriamento analógico, máquinas de estado/temporização e (no ESP32) rede WiFi."
+            }
+          }
         }
       }
     }
