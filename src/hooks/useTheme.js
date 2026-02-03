@@ -4,8 +4,8 @@ const STORAGE_KEY = 'theme';
 
 export function useTheme() {
   const prefersDark = useMemo(() => {
-    return window.matchMedia?.('(prefers-color-scheme: dark)')?.
-    matches ?? false;}, []);
+    return window.matchMedia?.('(prefers-color-scheme: dark)')?.matches ?? false;
+  }, []);
 
     const [theme, setTheme] = useState(() => {
       const saved = localStorage.getItem(STORAGE_KEY);
