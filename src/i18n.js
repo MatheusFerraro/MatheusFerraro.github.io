@@ -8,8 +8,13 @@ i18n
   .init({
     debug: false,
     fallbackLng: 'en',
-    supportedLngs: ['en', 'pt-BR', 'fr'],
-    load: 'languageOnly',
+    supportedLngs: ['en', 'pt-BR', 'pt', 'fr'],
+    nonExplicitSupportedLngs: false,
+    detection: {
+      order: ['localStorage', 'navigator', 'htmlTag'],
+      caches: ['localStorage'],
+      lookupLocalStorage: 'i18nextLng'
+    },
     interpolation: {
       escapeValue: false,
     },
@@ -17,6 +22,8 @@ i18n
       en: {
         translation: {
           nav: {
+            about: "About",
+            projects: "Projects",
             resume: "Resume"
           },
           hero: {
@@ -31,7 +38,14 @@ i18n
             seeking: "I am seeking an Internship or Junior IT role for 2026. My focus is on C#/.NET ecosystems and Embedded Systems."
           },
           stack: {
-            title: "Tech Stack"
+            title: "Tech Stack",
+            frontend: "Frontend",
+            backend: "Backend",
+            database: "Database",
+            embedded: "Embedded Systems",
+            versionControl: "Version Control",
+            testing: "Testing",
+            devops: "DevOps"
           },
           projects: "Projects",
           contact: "Contact Me",
@@ -50,6 +64,8 @@ i18n
       fr: {
         translation: {
           nav: {
+            about: "À propos",
+            projects: "Projets",
             resume: "CV"
           },
           hero: {
@@ -64,7 +80,14 @@ i18n
             seeking: "Je recherche un stage ou un poste junior en TI pour 2026. Je me concentre sur les écosystèmes C#/.NET et les systèmes embarqués."
           },
           stack: {
-            title: "Stack Technique"
+            title: "Stack Technique",
+            frontend: "Frontend",
+            backend: "Backend",
+            database: "Base de Données",
+            embedded: "Systèmes Embarqués",
+            versionControl: "Contrôle de Version",
+            testing: "Tests",
+            devops: "DevOps"
           },
           projects: "Projets",
           contact: "Contactez-moi",
@@ -83,6 +106,8 @@ i18n
       'pt-BR': {
         translation: {
           nav: {
+            about: "Sobre",
+            projects: "Projetos",
             resume: "Currículo"
           },
           hero: {
@@ -97,7 +122,56 @@ i18n
             seeking: "Estou em busca de um Estágio ou função Junior em TI para 2026. Meu foco está em ecossistemas C#/.NET e Sistemas Embarcados."
           },
           stack: {
-            title: "Tecnologias"
+            title: "Tecnologias",
+            frontend: "Frontend",
+            backend: "Backend",
+            database: "Banco de Dados",
+            embedded: "Sistemas Embarcados",
+            versionControl: "Controle de Versão",
+            testing: "Testes",
+            devops: "DevOps"
+          },
+          projects: "Projetos",
+          contact: "Entre em contato",
+          projectsList: {
+            recipeWorld: {
+              name: "Recipe World",
+              description: "Uma aplicação web full-stack projetada para demonstrar práticas de desenvolvimento de software de nível empresarial usando ASP.NET Core MVC (.NET 8). Este projeto foi construído para mostrar proficiência em Arquitetura N-Tier, Autenticação Segura, Gerenciamento de Banco de Dados e Testes Unitários. Possui um ecossistema completo de gerenciamento de receitas com segurança baseada em funções, rastreamento de ingredientes e fluxo de aprovação de administrador."
+            },
+            embedded: {
+              name: "Projetos Embarcados (Arduino UNO R3 + ESP32)",
+              description: "Projetos práticos de sistemas embarcados construídos com o Kit Elegoo Super Starter UNO R3 e um D1 MINI ESP32. Este repositório foca na integração prática de hardware + software: GPIO, PWM, sensoriamento analógico, máquinas de estado/temporização e (no ESP32) rede WiFi."
+            }
+          }
+        }
+      },
+      'pt': {
+        translation: {
+          nav: {
+            about: "Sobre",
+            projects: "Projetos",
+            resume: "Currículo"
+          },
+          hero: {
+            greeting: "Oi, eu sou",
+            name: "Matheus Camilo Ferraro",
+            title: "Estudante de Desenvolvimento de Software"
+          },
+          bio: {
+            intro: "Sou estudante de Desenvolvimento de Software no NBCC Moncton (Turma de 2026), originalmente do Brasil 🇧🇷.",
+            skills: "Faço a ponte entre software de alto nível (ASP.NET Core, React) e hardware de baixo nível (Arduino, ESP32).",
+            current: "Atualmente, aplico minhas habilidades de resolução de problemas técnicos como Associado Eletrônico no Walmart.",
+            seeking: "Estou em busca de um Estágio ou função Junior em TI para 2026. Meu foco está em ecossistemas C#/.NET e Sistemas Embarcados."
+          },
+          stack: {
+            title: "Tecnologias",
+            frontend: "Frontend",
+            backend: "Backend",
+            database: "Banco de Dados",
+            embedded: "Sistemas Embarcados",
+            versionControl: "Controle de Versão",
+            testing: "Testes",
+            devops: "DevOps"
           },
           projects: "Projetos",
           contact: "Entre em contato",
