@@ -133,7 +133,7 @@ function App() {
         <p>{t('contact')}</p>
         <div className="social-links">
           <a href="https://github.com/MatheusFerraro" target="_blank" rel="noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/matheus-ferraro/" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://www.linkedin.com/in/mcamiloferraro/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </footer>
 
