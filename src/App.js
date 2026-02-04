@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { useTheme } from './hooks/useTheme';
 import { projects } from './data/projects';
@@ -8,9 +8,26 @@ import './App.css';
 function App() {
   const { t, i18n } = useTranslation();
   const { theme, toggleTheme } = useTheme();
+  const [showScrollTop, setShowScrollTop] = useState(false);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+  };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
   };
 
   const allStack = [
@@ -119,6 +136,14 @@ function App() {
           <a href="https://www.linkedin.com/in/matheus-ferraro/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
       </footer>
+
+      <button 
+        className={`scroll-to-top ${showScrollTop ? 'visible' : ''}`}
+        onClick={scrollToTop}
+        aria-label="Scroll to top"
+      >
+        ↑
+      </button>
     </div>
   );
 }
