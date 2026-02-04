@@ -117,7 +117,7 @@ body {
   margin-bottom: 48px;
   border-bottom: 1px solid var(--border);
   animation: slideInLeft 0.6s ease-out;
-  gap: 24px;
+  gap: 16px;
 }
 
 .nav-logo {
@@ -135,35 +135,12 @@ body {
   transform: scale(1.1) rotate(5deg);
 }
 
-.nav-center {
-  display: flex;
-  gap: 8px;
-  flex: 1;
-  justify-content: center;
-}
-
-.nav-link {
-  background: transparent;
-  border: none;
-  color: var(--text);
-  padding: 8px 16px;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: 15px;
-  font-weight: 500;
-  transition: all 0.2s;
-}
-
-.nav-link:hover {
-  background: var(--card);
-  color: var(--accent);
-}
-
 .nav-right {
   display: flex;
   gap: 12px;
   align-items: center;
   flex-shrink: 0;
+  flex-wrap: wrap;
 }
 
 .lang-buttons {
@@ -172,6 +149,7 @@ body {
   background: var(--card);
   padding: 4px;
   border-radius: 8px;
+  border: 1px solid var(--border);
 }
 
 .lang-btn {
@@ -184,6 +162,7 @@ body {
   font-size: 13px;
   font-weight: 500;
   transition: all 0.2s;
+  min-width: 36px;
 }
 
 .lang-btn:hover {
@@ -198,6 +177,22 @@ body {
 .theme-btn {
   font-size: 20px;
   padding: 8px 12px !important;
+  background: var(--card) !important;
+  border: 1px solid var(--border) !important;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  height: 36px;
+}
+
+.theme-btn:hover {
+  background: var(--accent) !important;
+  border-color: var(--accent) !important;
+  transform: scale(1.05);
 }
 
 .btn {
@@ -394,6 +389,10 @@ section h2::after {
   transition: transform 0.3s ease;
 }
 
+[data-theme='dark'] .stack-icon {
+  filter: brightness(1.1) contrast(1.05);
+}
+
 .stack-card:hover .stack-icon {
   transform: scale(1.1) rotate(5deg);
 }
@@ -536,36 +535,41 @@ footer p {
   }
 
   .navbar {
-    flex-direction: column;
-    gap: 16px;
+    flex-wrap: wrap;
+    gap: 12px;
     padding: 16px 0;
   }
 
   .nav-logo {
-    order: 1;
-  }
-
-  .nav-center {
-    order: 2;
-    width: 100%;
-    flex-direction: column;
-    gap: 8px;
-  }
-
-  .nav-link {
-    width: 100%;
-    text-align: center;
+    flex: 0 0 auto;
   }
 
   .nav-right {
-    order: 3;
-    width: 100%;
-    justify-content: space-between;
+    flex: 1 1 auto;
+    justify-content: flex-end;
+    gap: 8px;
   }
 
   .lang-buttons {
-    flex: 1;
-    justify-content: center;
+    padding: 3px;
+  }
+
+  .lang-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    min-width: 32px;
+  }
+
+  .theme-btn {
+    font-size: 18px;
+    padding: 6px 10px !important;
+    min-width: 40px;
+    height: 32px;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 13px;
   }
 
   .hero {
@@ -728,23 +732,11 @@ footer p {
 @media (min-width: 481px) and (max-width: 768px) {
   .navbar {
     flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .nav-logo {
-    order: 1;
+    gap: 12px;
   }
 
   .nav-right {
-    order: 2;
-    width: auto;
-  }
-
-  .nav-center {
-    order: 3;
-    width: 100%;
-    flex-direction: row;
-    justify-content: center;
+    gap: 10px;
   }
 
   .stack-grid {

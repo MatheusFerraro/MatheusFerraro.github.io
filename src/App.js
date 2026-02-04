@@ -31,13 +31,6 @@ function App() {
     });
   };
 
-  const scrollToSection = (sectionId) => {
-    const element = document.getElementById(sectionId);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const stackCategories = [
     { name: t('stack.frontend'), items: FrontStack },
     { name: t('stack.backend'), items: BackStack },
@@ -69,17 +62,6 @@ function App() {
         <div className="nav-logo">
           <img src={logo} alt="Matheus Ferraro Logo" className="logo" onClick={scrollToTop} />
         </div>
-        <div className="nav-center">
-          <button className="nav-link" onClick={() => scrollToSection('about')}>
-            {t('nav.about')}
-          </button>
-          <button className="nav-link" onClick={() => scrollToSection('stack')}>
-            {t('stack.title')}
-          </button>
-          <button className="nav-link" onClick={() => scrollToSection('projects')}>
-            {t('nav.projects')}
-          </button>
-        </div>
         <div className="nav-right">
           <div className="lang-buttons">
             <button 
@@ -102,7 +84,7 @@ function App() {
             </button>
           </div>
           <button className="theme-btn" onClick={toggleTheme} aria-label="Toggle theme">
-            {theme === 'dark' ? '☀️' : '🌙'}
+            {theme === 'dark' ? '☀' : '🌙'}
           </button>
           <a className="btn" href="/resume/Resume.pdf" download>
             {t('nav.resume')}
