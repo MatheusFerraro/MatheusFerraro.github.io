@@ -20,9 +20,16 @@ i18n
             resume: "Resume"
           },
           hero: {
-            title: "Hi, I'm Matheus Ferraro"
+            greeting: "Hi, I'm",
+            name: "Matheus Camilo Ferraro",
+            title: "Software Development Student"
           },
-          description: "I am a Software Developer based in Canada.",
+          bio: {
+            intro: "I am a Software Development Student at NBCC Moncton (Class of 2026), originally from Brazil 🇧🇷.",
+            skills: "I bridge the gap between high-level software (ASP.NET Core, React) and low-level hardware (Arduino, ESP32).",
+            current: "Currently, I am applying my technical problem-solving skills as an Electronic Associate at Walmart.",
+            seeking: "I am seeking an Internship or Junior IT role for 2026. My focus is on C#/.NET ecosystems and Embedded Systems."
+          },
           stack: {
             title: "Tech Stack"
           },
@@ -46,9 +53,16 @@ i18n
             resume: "CV"
           },
           hero: {
-            title: "Salut, je suis Matheus Ferraro"
+            greeting: "Salut, je suis",
+            name: "Matheus Camilo Ferraro",
+            title: "Étudiant en Développement Logiciel"
           },
-          description: "Je suis un développeur de logiciels basé au Canada.",
+          bio: {
+            intro: "Je suis étudiant en développement logiciel au NBCC Moncton (Promotion 2026), originaire du Brésil 🇧🇷.",
+            skills: "Je fais le pont entre les logiciels de haut niveau (ASP.NET Core, React) et le matériel de bas niveau (Arduino, ESP32).",
+            current: "Actuellement, j'applique mes compétences en résolution de problèmes techniques en tant qu'associé électronique chez Walmart.",
+            seeking: "Je recherche un stage ou un poste junior en TI pour 2026. Je me concentre sur les écosystèmes C#/.NET et les systèmes embarqués."
+          },
           stack: {
             title: "Stack Technique"
           },
@@ -72,9 +86,16 @@ i18n
             resume: "Currículo"
           },
           hero: {
-            title: "Oi, eu sou Matheus Ferraro"
+            greeting: "Oi, eu sou",
+            name: "Matheus Camilo Ferraro",
+            title: "Estudante de Desenvolvimento de Software"
           },
-          description: "Sou um desenvolvedor de software morando no Canadá.",
+          bio: {
+            intro: "Sou estudante de Desenvolvimento de Software no NBCC Moncton (Turma de 2026), originalmente do Brasil 🇧🇷.",
+            skills: "Faço a ponte entre software de alto nível (ASP.NET Core, React) e hardware de baixo nível (Arduino, ESP32).",
+            current: "Atualmente, aplico minhas habilidades de resolução de problemas técnicos como Associado Eletrônico no Walmart.",
+            seeking: "Estou em busca de um Estágio ou função Junior em TI para 2026. Meu foco está em ecossistemas C#/.NET e Sistemas Embarcados."
+          },
           stack: {
             title: "Tecnologias"
           },

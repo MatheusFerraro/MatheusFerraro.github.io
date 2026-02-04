@@ -72,8 +72,15 @@ function App() {
       </nav>
 
       <header className="hero">
-        <h1>{t('hero.title')}</h1>
-        <p className="hero-description">{t('description')}</p>
+        <p className="hero-greeting">{t('hero.greeting')}</p>
+        <h1>{t('hero.name')}</h1>
+        <p className="hero-title">{t('hero.title')}</p>
+        <div className="hero-bio">
+          <p>{t('bio.intro')}</p>
+          <p>{t('bio.skills')}</p>
+          <p>{t('bio.current')}</p>
+          <p className="hero-seeking">{t('bio.seeking')}</p>
+        </div>
       </header>
 
       <section id="stack">
