@@ -49,10 +49,22 @@ function App() {
       technologies: projects[0].technologies
     },
     {
-      name: t('projectsList.embedded.name'),
-      description: t('projectsList.embedded.description'),
+      name: t('projectsList.smartRetail.name'),
+      description: t('projectsList.smartRetail.description'),
       url: projects[1].url,
       technologies: projects[1].technologies
+    },
+    {
+      name: t('projectsList.snakeGame.name'),
+      description: t('projectsList.snakeGame.description'),
+      url: projects[2].url,
+      technologies: projects[2].technologies
+    },
+    {
+      name: t('projectsList.embedded.name'),
+      description: t('projectsList.embedded.description'),
+      url: projects[3].url,
+      technologies: projects[3].technologies
     }
   ];
 

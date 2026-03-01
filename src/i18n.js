@@ -54,6 +54,14 @@ i18n
               name: "Recipe World",
               description: "A full-stack web application designed to demonstrate enterprise-level software development practices using ASP.NET Core MVC (.NET 8). This project was built to showcase proficiency in N-Tier Architecture, Secure Authentication, Database Management, and Unit Testing. It features a complete recipe management ecosystem with role-based security, ingredient tracking, and an admin approval workflow."
             },
+            smartRetail: {
+              name: "Smart Retail System",
+              description: "A full-stack IoT application that automates retail shelf inventory tracking — from hardware sensor to live web dashboard. An ESP32 measures product stock via an ultrasonic sensor and transmits telemetry over Wi-Fi to a C# ASP.NET Core REST API. The backend persists readings in SQL Server and serves them to a live dashboard that auto-updates in real time."
+            },
+            snakeGame: {
+              name: "ESP32 Snake Game",
+              description: "A classic Snake Game built from scratch for the ESP32 — demonstrating OOP principles, State Machine architecture, and hardware-level I2C communication in embedded C++. The firmware uses abstract interfaces and polymorphism to fully decouple game logic from hardware drivers, with dynamic fallback to Serial Monitor when no hardware is detected."
+            },
             embedded: {
               name: "Embedded-Projects (Arduino UNO R3 + ESP32)",
               description: "Hands-on embedded systems projects built with the Elegoo Super Starter Kit UNO R3 and a D1 MINI ESP32. This repo focuses on practical hardware + software integration: GPIO, PWM, analog sensing, timing/state machines, and (on ESP32) WiFi networking."
@@ -95,6 +103,14 @@ i18n
             recipeWorld: {
               name: "Recipe World",
               description: "Une application web full-stack conçue pour démontrer les pratiques de développement logiciel de niveau entreprise utilisant ASP.NET Core MVC (.NET 8). Ce projet a été construit pour mettre en valeur la maîtrise de l'Architecture N-Tier, l'Authentification Sécurisée, la Gestion de Base de Données et les Tests Unitaires. Il propose un écosystème complet de gestion de recettes avec sécurité basée sur les rôles, suivi des ingrédients et workflow d'approbation admin."
+            },
+            smartRetail: {
+              name: "Système Smart Retail",
+              description: "Une application IoT full-stack qui automatise le suivi d'inventaire en rayon — du capteur matériel au tableau de bord web en direct. Un ESP32 mesure le stock de produits via un capteur ultrasonique et transmet la télémétrie par Wi-Fi à une API REST C# ASP.NET Core. Le backend persiste les lectures dans SQL Server et les affiche sur un tableau de bord en temps réel."
+            },
+            snakeGame: {
+              name: "Jeu Snake ESP32",
+              description: "Un jeu Snake classique construit de zéro pour l'ESP32 — démontrant les principes de POO, l'architecture Machine d'État et la communication I2C au niveau matériel en C++ embarqué. Le firmware utilise des interfaces abstraites et le polymorphisme pour découpler complètement la logique du jeu des pilotes matériels, avec repli dynamique vers le Moniteur Série lorsqu'aucun matériel n'est détecté."
             },
             embedded: {
               name: "Projets Embarqués (Arduino UNO R3 + ESP32)",
@@ -138,6 +154,14 @@ i18n
               name: "Recipe World",
               description: "Uma aplicação web full-stack projetada para demonstrar práticas de desenvolvimento de software de nível empresarial usando ASP.NET Core MVC (.NET 8). Este projeto foi construído para mostrar proficiência em Arquitetura N-Tier, Autenticação Segura, Gerenciamento de Banco de Dados e Testes Unitários. Possui um ecossistema completo de gerenciamento de receitas com segurança baseada em funções, rastreamento de ingredientes e fluxo de aprovação de administrador."
             },
+            smartRetail: {
+              name: "Sistema Smart Retail",
+              description: "Uma aplicação IoT full-stack que automatiza o rastreamento de inventário em prateleiras — do sensor de hardware ao painel web em tempo real. Um ESP32 mede o estoque de produtos via sensor ultrassônico e transmite telemetria por Wi-Fi para uma API REST C# ASP.NET Core. O backend persiste as leituras no SQL Server e as exibe em um painel que atualiza automaticamente em tempo real."
+            },
+            snakeGame: {
+              name: "Jogo Snake ESP32",
+              description: "Um jogo Snake clássico construído do zero para o ESP32 — demonstrando princípios de POO, arquitetura de Máquina de Estados e comunicação I2C em nível de hardware em C++ embarcado. O firmware usa interfaces abstratas e polimorfismo para desacoplar completamente a lógica do jogo dos drivers de hardware, com fallback dinâmico para o Monitor Serial quando nenhum hardware é detectado."
+            },
             embedded: {
               name: "Projetos Embarcados (Arduino UNO R3 + ESP32)",
               description: "Projetos práticos de sistemas embarcados construídos com o Kit Elegoo Super Starter UNO R3 e um D1 MINI ESP32. Este repositório foca na integração prática de hardware + software: GPIO, PWM, sensoriamento analógico, máquinas de estado/temporização e (no ESP32) rede WiFi."
@@ -179,6 +203,14 @@ i18n
             recipeWorld: {
               name: "Recipe World",
               description: "Uma aplicação web full-stack projetada para demonstrar práticas de desenvolvimento de software de nível empresarial usando ASP.NET Core MVC (.NET 8). Este projeto foi construído para mostrar proficiência em Arquitetura N-Tier, Autenticação Segura, Gerenciamento de Banco de Dados e Testes Unitários. Possui um ecossistema completo de gerenciamento de receitas com segurança baseada em funções, rastreamento de ingredientes e fluxo de aprovação de administrador."
+            },
+            smartRetail: {
+              name: "Sistema Smart Retail",
+              description: "Uma aplicação IoT full-stack que automatiza o rastreamento de inventário em prateleiras — do sensor de hardware ao painel web em tempo real. Um ESP32 mede o estoque de produtos via sensor ultrassônico e transmite telemetria por Wi-Fi para uma API REST C# ASP.NET Core. O backend persiste as leituras no SQL Server e as exibe em um painel que atualiza automaticamente em tempo real."
+            },
+            snakeGame: {
+              name: "Jogo Snake ESP32",
+              description: "Um jogo Snake clássico construído do zero para o ESP32 — demonstrando princípios de POO, arquitetura de Máquina de Estados e comunicação I2C em nível de hardware em C++ embarcado. O firmware usa interfaces abstratas e polimorfismo para desacoplar completamente a lógica do jogo dos drivers de hardware, com fallback dinâmico para o Monitor Serial quando nenhum hardware é detectado."
             },
             embedded: {
               name: "Projetos Embarcados (Arduino UNO R3 + ESP32)",
