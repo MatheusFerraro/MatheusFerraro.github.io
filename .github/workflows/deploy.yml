@@ -28,10 +28,8 @@ jobs:
           node-version: '20'
           cache: 'npm'
 
-      - name: Clean install
-        run: |
-          rm -rf node_modules package-lock.json
-          npm install --legacy-peer-deps
+      - name: Install dependencies
+        run: npm ci
 
       - name: Build
         run: npm run build
@@ -39,7 +37,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./build
+          path: ./dist
 
   deploy:
     environment:
