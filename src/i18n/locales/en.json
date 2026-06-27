@@ -1,0 +1,96 @@
+{
+  "a11y": {
+    "skipToContent": "Skip to content",
+    "switchToLight": "Switch to light mode",
+    "switchToDark": "Switch to dark mode",
+    "selectLanguage": "Select language",
+    "backToTop": "Back to top",
+    "homeLogo": "Back to top"
+  },
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "skills": "Skills",
+    "contact": "Contact",
+    "downloadResume": "Download résumé"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "role": "Backend Developer · C# / .NET",
+    "intro": "I build reliable backend systems and full-stack web apps with C# and ASP.NET Core — from production APIs to the databases and interfaces around them.",
+    "viewProjects": "View projects",
+    "getInTouch": "Get in touch"
+  },
+  "about": {
+    "title": "About",
+    "p1": "I'm a backend developer based in Moncton, New Brunswick, and a recent graduate of NBCC Moncton. I focus on the C# / .NET ecosystem — ASP.NET Core, Entity Framework Core, and relational databases like SQL Server and PostgreSQL.",
+    "p2": "During my practicum at Gravitit I shipped a production application end to end: Flight Plan, a tool pilots use to file official ICAO flight plans online and download print-ready PDFs. I care about clean, maintainable code, sensible architecture, and getting work into users' hands.",
+    "architecture": "I've deliberately built across three architectural styles — Clean Architecture, Layered / N-Tier, and Vertical Slice — so I understand the trade-offs each one makes instead of reaching for the same pattern every time.",
+    "availability": "I'm open to backend and full-stack roles — on-site in Moncton or remote across Canada."
+  },
+  "projects": {
+    "title": "Projects",
+    "subtitle": "A selection of things I've designed, built, and shipped.",
+    "architectureLabel": "Architecture",
+    "status": {
+      "production": "Live · Production",
+      "inProgress": "In progress"
+    },
+    "links": {
+      "live": "Live site",
+      "repo": "Source code",
+      "demo": "Video demo",
+      "private": "Private — coming soon"
+    },
+    "items": {
+      "flightPlan": {
+        "summary": "A web app that digitizes the official ICAO flight plan: pilots fill out a form online and download a print-ready PDF. Built during my practicum at Gravitit."
+      },
+      "nbTcgTrader": {
+        "summary": "A localized trading-card marketplace and digital collection organizer. Its core feature turns a bulk CSV/Excel import into a visual digital \"binder\", from which a user can list cards for sale and connect with local buyers. The data model is TCG-agnostic (Pokémon first)."
+      },
+      "recipeWorld": {
+        "summary": "A full-stack recipe platform where users share and review recipes, with role-based admin approval workflows for new ingredients and categories."
+      },
+      "smartRetail": {
+        "summary": "An end-to-end IoT inventory tracker: an ESP32 sensor measures shelf stock and posts it to an ASP.NET Core API that a live dashboard reads from."
+      }
+    },
+    "collaborations": {
+      "title": "Collaborations",
+      "subtitle": "Side projects built together with Brian Cabello.",
+      "items": {
+        "flavorDaCasa": {
+          "summary": "A restaurant management system built with Java and Spring Boot, following Clean Architecture."
+        },
+        "triviaQuest": {
+          "summary": "A real-time multiplayer trivia game built with Node.js, Express, and Socket.io."
+        }
+      }
+    }
+  },
+  "skills": {
+    "title": "Skills",
+    "subtitle": "The tools I reach for, grouped by where they fit.",
+    "groups": {
+      "backend": "Backend",
+      "data": "Data",
+      "architecture": "Architecture",
+      "cloud": "Cloud & DevOps",
+      "frontend": "Frontend",
+      "tools": "Tools"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Have a role, a project, or a question? The fastest way to reach me is email — I'm always happy to talk.",
+    "emailLabel": "Email",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  },
+  "footer": {
+    "built": "Built with React, Vite & Tailwind CSS",
+    "copyright": "© {{year}} Matheus Camilo Ferraro",
+    "source": "Source"
+  }
+}

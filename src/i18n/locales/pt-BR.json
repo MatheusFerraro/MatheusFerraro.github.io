@@ -1,0 +1,96 @@
+{
+  "a11y": {
+    "skipToContent": "Pular para o conteúdo",
+    "switchToLight": "Mudar para o modo claro",
+    "switchToDark": "Mudar para o modo escuro",
+    "selectLanguage": "Selecionar idioma",
+    "backToTop": "Voltar ao topo",
+    "homeLogo": "Voltar ao topo"
+  },
+  "nav": {
+    "about": "Sobre",
+    "projects": "Projetos",
+    "skills": "Habilidades",
+    "contact": "Contato",
+    "downloadResume": "Baixar currículo"
+  },
+  "hero": {
+    "greeting": "Olá, eu sou",
+    "role": "Desenvolvedor Backend · C# / .NET",
+    "intro": "Construo sistemas backend confiáveis e aplicações web full-stack com C# e ASP.NET Core — de APIs em produção aos bancos de dados e interfaces ao redor delas.",
+    "viewProjects": "Ver projetos",
+    "getInTouch": "Entrar em contato"
+  },
+  "about": {
+    "title": "Sobre",
+    "p1": "Sou desenvolvedor backend, moro em Moncton, New Brunswick, e me formei recentemente no NBCC Moncton. Meu foco é o ecossistema C# / .NET — ASP.NET Core, Entity Framework Core e bancos de dados relacionais como SQL Server e PostgreSQL.",
+    "p2": "Durante meu estágio na Gravitit, entreguei uma aplicação em produção de ponta a ponta: o Flight Plan, uma ferramenta que pilotos usam para preencher o plano de voo oficial da ICAO online e baixar um PDF pronto para impressão. Valorizo código limpo e de fácil manutenção, arquitetura bem pensada e colocar o trabalho nas mãos dos usuários.",
+    "architecture": "Construí de propósito em três estilos de arquitetura diferentes — Clean Architecture, Layered / N-Tier e Vertical Slice — para entender as vantagens e os custos de cada um, em vez de recorrer sempre ao mesmo padrão.",
+    "availability": "Estou aberto a vagas de backend e full-stack — presencial em Moncton ou remoto em todo o Canadá."
+  },
+  "projects": {
+    "title": "Projetos",
+    "subtitle": "Uma seleção de coisas que projetei, construí e coloquei no ar.",
+    "architectureLabel": "Arquitetura",
+    "status": {
+      "production": "No ar · Produção",
+      "inProgress": "Em andamento"
+    },
+    "links": {
+      "live": "Site no ar",
+      "repo": "Código-fonte",
+      "demo": "Vídeo demo",
+      "private": "Privado — em breve"
+    },
+    "items": {
+      "flightPlan": {
+        "summary": "Uma aplicação web que digitaliza o plano de voo oficial da ICAO: o piloto preenche um formulário online e baixa um PDF pronto para impressão. Construído durante meu estágio na Gravitit."
+      },
+      "nbTcgTrader": {
+        "summary": "Um marketplace localizado de cartas colecionáveis e organizador de coleção digital. Seu recurso principal transforma uma importação em massa de CSV/Excel em um \"álbum\" digital visual, a partir do qual o usuário pode anunciar cartas à venda e se conectar com compradores locais. O modelo de dados é agnóstico de TCG (Pokémon primeiro)."
+      },
+      "recipeWorld": {
+        "summary": "Uma plataforma full-stack de receitas onde os usuários compartilham e avaliam receitas, com fluxos de aprovação de administrador baseados em papéis para novos ingredientes e categorias."
+      },
+      "smartRetail": {
+        "summary": "Um rastreador de estoque IoT de ponta a ponta: um sensor ESP32 mede o estoque na prateleira e envia os dados para uma API ASP.NET Core que um painel ao vivo consome."
+      }
+    },
+    "collaborations": {
+      "title": "Colaborações",
+      "subtitle": "Projetos paralelos feitos em parceria com Brian Cabello.",
+      "items": {
+        "flavorDaCasa": {
+          "summary": "Um sistema de gestão de restaurante construído com Java e Spring Boot, seguindo Clean Architecture."
+        },
+        "triviaQuest": {
+          "summary": "Um jogo de perguntas e respostas multiplayer em tempo real, construído com Node.js, Express e Socket.io."
+        }
+      }
+    }
+  },
+  "skills": {
+    "title": "Habilidades",
+    "subtitle": "As ferramentas que uso, agrupadas por onde se encaixam.",
+    "groups": {
+      "backend": "Backend",
+      "data": "Dados",
+      "architecture": "Arquitetura",
+      "cloud": "Cloud & DevOps",
+      "frontend": "Frontend",
+      "tools": "Ferramentas"
+    }
+  },
+  "contact": {
+    "title": "Contato",
+    "description": "Tem uma vaga, um projeto ou uma dúvida? O jeito mais rápido de falar comigo é por e-mail — fico feliz em conversar.",
+    "emailLabel": "E-mail",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  },
+  "footer": {
+    "built": "Feito com React, Vite e Tailwind CSS",
+    "copyright": "© {{year}} Matheus Camilo Ferraro",
+    "source": "Código"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "_translatorNotes": [
+    "Matheus is still learning French — please double-check the items below. They are correct French, but involve word choices worth confirming. This key is ignored by i18next; it's only here as a review aid.",
+    "ICAO is rendered as 'OACI' (the official French acronym: Organisation de l'aviation civile internationale). Used in about.p2 and projects.items.flightPlan. Switch back to 'ICAO' if you'd rather keep the English form.",
+    "'Courriel' is used for 'email' (standard in Canadian French). Appears in contact.description and contact.emailLabel. Swap to 'E-mail' if you prefer.",
+    "'Développeur Backend' translates the job title 'Backend Developer' (tech terms like C# / .NET stay in English). See hero.role.",
+    "'classeur' is used for the card 'binder' in projects.items.nbTcgTrader — the usual FR word for a collector's card binder. Alternative: 'album'.",
+    "'agnostique au TCG' is a literal rendering of 'TCG-agnostic'. A softer option: 'indépendant du type de TCG'.",
+    "'mis en ligne' / 'Site en ligne' render 'shipped' / 'Live'. Natural, but confirm the tone fits."
+  ],
+  "a11y": {
+    "skipToContent": "Aller au contenu",
+    "switchToLight": "Passer en mode clair",
+    "switchToDark": "Passer en mode sombre",
+    "selectLanguage": "Choisir la langue",
+    "backToTop": "Retour en haut",
+    "homeLogo": "Retour en haut"
+  },
+  "nav": {
+    "about": "À propos",
+    "projects": "Projets",
+    "skills": "Compétences",
+    "contact": "Contact",
+    "downloadResume": "Télécharger le CV"
+  },
+  "hero": {
+    "greeting": "Bonjour, je suis",
+    "role": "Développeur Backend · C# / .NET",
+    "intro": "Je conçois des systèmes backend fiables et des applications web full-stack avec C# et ASP.NET Core — des API en production aux bases de données et interfaces qui les entourent.",
+    "viewProjects": "Voir les projets",
+    "getInTouch": "Me contacter"
+  },
+  "about": {
+    "title": "À propos",
+    "p1": "Je suis développeur backend basé à Moncton, au Nouveau-Brunswick, et récemment diplômé du NBCC Moncton. Je me concentre sur l'écosystème C# / .NET — ASP.NET Core, Entity Framework Core et les bases de données relationnelles comme SQL Server et PostgreSQL.",
+    "p2": "Lors de mon stage chez Gravitit, j'ai livré une application en production de bout en bout : Flight Plan, un outil que les pilotes utilisent pour remplir le plan de vol officiel de l'OACI en ligne et télécharger un PDF prêt à imprimer. J'accorde de l'importance à un code propre et maintenable, à une architecture réfléchie et à des produits qui arrivent réellement entre les mains des utilisateurs.",
+    "architecture": "J'ai délibérément travaillé avec trois styles d'architecture différents — Clean Architecture, Layered / N-Tier et Vertical Slice — afin de comprendre les compromis de chacun plutôt que de recourir toujours au même modèle.",
+    "availability": "Je suis ouvert à des postes en backend et full-stack — sur place à Moncton ou à distance partout au Canada."
+  },
+  "projects": {
+    "title": "Projets",
+    "subtitle": "Une sélection de projets que j'ai conçus, développés et mis en ligne.",
+    "architectureLabel": "Architecture",
+    "status": {
+      "production": "En ligne · Production",
+      "inProgress": "En cours"
+    },
+    "links": {
+      "live": "Site en ligne",
+      "repo": "Code source",
+      "demo": "Démo vidéo",
+      "private": "Privé — bientôt disponible"
+    },
+    "items": {
+      "flightPlan": {
+        "summary": "Une application web qui numérise le plan de vol officiel de l'OACI : le pilote remplit un formulaire en ligne et télécharge un PDF prêt à imprimer. Développée lors de mon stage chez Gravitit."
+      },
+      "nbTcgTrader": {
+        "summary": "Une place de marché localisée de cartes à collectionner et un organisateur de collection numérique. Sa fonctionnalité principale transforme un import en masse CSV/Excel en un « classeur » numérique visuel, à partir duquel l'utilisateur peut mettre des cartes en vente et entrer en contact avec des acheteurs locaux. Le modèle de données est agnostique au TCG (Pokémon en premier)."
+      },
+      "recipeWorld": {
+        "summary": "Une plateforme de recettes full-stack où les utilisateurs partagent et évaluent des recettes, avec des flux d'approbation administrateur basés sur les rôles pour les nouveaux ingrédients et catégories."
+      },
+      "smartRetail": {
+        "summary": "Un suivi d'inventaire IoT de bout en bout : un capteur ESP32 mesure le stock en rayon et l'envoie à une API ASP.NET Core qu'un tableau de bord en direct consulte."
+      }
+    },
+    "collaborations": {
+      "title": "Collaborations",
+      "subtitle": "Projets parallèles réalisés avec Brian Cabello.",
+      "items": {
+        "flavorDaCasa": {
+          "summary": "Un système de gestion de restaurant développé avec Java et Spring Boot, suivant la Clean Architecture."
+        },
+        "triviaQuest": {
+          "summary": "Un jeu de quiz multijoueur en temps réel développé avec Node.js, Express et Socket.io."
+        }
+      }
+    }
+  },
+  "skills": {
+    "title": "Compétences",
+    "subtitle": "Les outils que j'utilise, regroupés par domaine.",
+    "groups": {
+      "backend": "Backend",
+      "data": "Données",
+      "architecture": "Architecture",
+      "cloud": "Cloud & DevOps",
+      "frontend": "Frontend",
+      "tools": "Outils"
+    }
+  },
+  "contact": {
+    "title": "Contact",
+    "description": "Un poste, un projet ou une question ? Le moyen le plus rapide de me joindre, c'est par courriel — c'est toujours avec plaisir que j'échange.",
+    "emailLabel": "Courriel",
+    "linkedinLabel": "LinkedIn",
+    "githubLabel": "GitHub"
+  },
+  "footer": {
+    "built": "Réalisé avec React, Vite et Tailwind CSS",
+    "copyright": "© {{year}} Matheus Camilo Ferraro",
+    "source": "Code source"
+  }
+}
