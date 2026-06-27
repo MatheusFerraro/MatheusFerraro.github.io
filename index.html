@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="alternate icon" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1d4ed8" />
+    <meta
+      name="description"
+      content="Matheus Camilo Ferraro — Backend Developer (C# / .NET). NBCC Moncton graduate building backend and full-stack apps with ASP.NET Core, Entity Framework Core, and PostgreSQL / SQL Server."
+    />
+    <link rel="apple-touch-icon" href="/logo.svg" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://matheusferraro.github.io/" />
+    <meta property="og:title" content="Matheus Camilo Ferraro | Backend Developer · C# / .NET" />
+    <meta
+      property="og:description"
+      content="Backend Developer (C# / .NET) and NBCC Moncton graduate. Building backend and full-stack apps with ASP.NET Core, EF Core, and PostgreSQL / SQL Server."
+    />
+    <meta property="og:image" content="https://matheusferraro.github.io/logo.svg" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://matheusferraro.github.io/" />
+    <meta name="twitter:title" content="Matheus Camilo Ferraro | Backend Developer · C# / .NET" />
+    <meta
+      name="twitter:description"
+      content="Backend Developer (C# / .NET) and NBCC Moncton graduate building backend and full-stack apps with ASP.NET Core."
+    />
+    <meta name="twitter:image" content="https://matheusferraro.github.io/logo.svg" />
+
+    <link rel="manifest" href="/manifest.json" />
+
+    <!-- No-flash theme: set the `dark` class before paint, matching useTheme.ts -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme');
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var dark = saved ? saved === 'dark' : prefersDark;
+          if (dark) document.documentElement.classList.add('dark');
+        } catch (e) {}
+      })();
+    </script>
+
+    <title>Matheus Camilo Ferraro | Backend Developer · C# / .NET</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

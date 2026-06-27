@@ -1,91 +1,79 @@
-﻿# Matheus Ferraro - Portfolio
+# Matheus Camilo Ferraro — Portfolio
 
-🌐 **Live Site:** [https://MatheusFerraro.github.io](https://MatheusFerraro.github.io)
+🌐 **Live:** [matheusferraro.github.io](https://matheusferraro.github.io)
 
-Modern, multilingual portfolio website showcasing my software development projects and technical skills.
+Personal portfolio of Matheus Ferraro — Backend Developer (C# / .NET). A clean,
+fast, multilingual single-page site that puts the projects first.
 
-## ✨ Features
+## Stack
 
-- 🌍 **Multilingual Support** - English, French, and Brazilian Portuguese
-- 🎨 **Dark/Light Theme** - Automatic theme detection with manual toggle
-- 📱 **Responsive Design** - Works on all devices
-- ⚡ **Fast & Optimized** - Built with React and deployed on GitHub Pages
-- 🛠️ **Tech Stack Display** - Interactive showcase of technologies and tools
+- **React + Vite + TypeScript**
+- **Tailwind CSS** (dark/light via a `dark` class on `<html>`; brand colors are
+  CSS-variable tokens defined in [`src/index.css`](src/index.css))
+- **react-i18next** — English (default), Brazilian Portuguese, French
+- **lucide-react** icons
+- Deployed to **GitHub Pages** via GitHub Actions
 
-## 🚀 Technologies Used
+## Run it locally
 
-- React 19
-- i18next for internationalization
-- CSS Variables for theming
-- GitHub Actions for CI/CD
+```bash
+npm install      # install dependencies
+npm run dev      # start the Vite dev server (http://localhost:5173)
+npm run build    # type-check and build to dist/
+npm run preview  # preview the production build locally
+```
 
-## 🏃 Getting Started
+Requires Node 20+.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Deployment
 
-## Available Scripts
+Pushing to `master` triggers [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml),
+which runs `npm ci`, builds to `dist/`, and publishes it to GitHub Pages. No manual
+step is needed. Because this is a GitHub **user page** served from the domain root,
+Vite's `base` is `/` (see [`vite.config.ts`](vite.config.ts)).
 
-In the project directory, you can run:
+## Project structure
 
-### `npm start`
+```
+index.html                 Vite entry + no-flash theme script + meta tags
+src/
+  main.tsx                 App bootstrap (loads i18n + styles)
+  App.tsx                  Page composition (Header + sections + Footer)
+  index.css                Tailwind layers + theme color tokens
+  i18n/
+    index.ts               i18next setup
+    locales/{en,pt-BR,fr}.json   all translated copy
+  data/
+    projects.ts            project + collaboration data (source of truth)
+    skills.ts              skill groups
+  lib/profile.ts           name, email, social links, résumé path
+  hooks/useTheme.ts        dark/light theme (class + localStorage)
+  components/              Header, switchers, shared UI bits
+  sections/                Hero, About, Projects, Skills, Contact, Footer
+public/
+  resume/Resume.pdf        the "Download résumé" target
+  logo.svg favicon.svg manifest.json robots.txt
+```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to add a project
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Add an entry to the `projects` array in [`src/data/projects.ts`](src/data/projects.ts).
+   Set a unique `id`, the `name`, `stack` tags, `architecture` label, `status`
+   (`production` | `in-progress` | `standard`), and `links` (`live`, `repo`,
+   `demo`, or `privateRepo: true`). Tech and architecture labels stay in English.
+2. Add the one-line summary for that `id` in **all three** locale files under
+   `projects.items.<id>.summary` — see [`src/i18n/locales/en.json`](src/i18n/locales/en.json).
 
-### `npm test`
+Order in the array is the order on the page. (Collaborations live in the
+`collaborations` array of the same file, with summaries under
+`projects.collaborations.items.<id>.summary`.)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to add or edit a translation string
 
-### `npm run build`
+All visible copy lives in [`src/i18n/locales/`](src/i18n/locales/) — `en.json`,
+`pt-BR.json`, and `fr.json`. Keep the same key in all three files. Components read
+it with `t('some.key')`. Project names and tech terms (ASP.NET Core, PostgreSQL, …)
+stay in English across every language.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> The French file has a `_translatorNotes` block at the top listing phrasings to
+> double-check. It's ignored by i18next — it's only a review aid.
